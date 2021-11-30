@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="reportContext" prefHeight="400.0" prefWidth="600.0" styleClass="page" stylesheets="@assets/styles/MainForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportFormController">
+   <children>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#moveToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/images/home.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgDailyReports" fitHeight="80.0" fitWidth="80.0" layoutX="112.0" layoutY="145.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/images/incomereports.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgMonthlyReports" fitHeight="80.0" fitWidth="80.0" layoutX="260.0" layoutY="145.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/images/incomereports.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgMovableItems" fitHeight="80.0" fitWidth="80.0" layoutX="411.0" layoutY="145.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/images/movables.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="1.0" layoutY="297.0" prefHeight="51.0" prefWidth="600.0" text="Welcome" textAlignment="CENTER" textFill="#0a39f7">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="1.0" layoutY="337.0" prefHeight="21.0" prefWidth="600.0" text="Please select one of above main operations to proceed" />
+   </children>
+</AnchorPane>

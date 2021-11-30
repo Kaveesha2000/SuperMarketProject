@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cashierMainFormContext" prefHeight="400.0" prefWidth="600.0" styleClass="page" stylesheets="@assets/styles/MainForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierMainFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="1.0" layoutY="54.0" prefHeight="17.0" prefWidth="600.0" text="SuperMarket" textFill="#084697">
+         <font>
+            <Font name="Arial Black" size="40.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1.0" layoutY="111.0" prefHeight="17.0" prefWidth="600.0" text="Select , Buy , Be Happy With Us" textFill="#020d1b">
+         <font>
+            <Font name="Algerian" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="24.0" layoutY="152.0" prefHeight="3.0" prefWidth="554.0" />
+      <ImageView fx:id="imgCustomer" fitHeight="100.0" fitWidth="100.0" layoutX="81.0" layoutY="185.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="180.0">
+         <image>
+            <Image url="@assets/images/customer.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgOrder" fitHeight="100.0" fitWidth="100.0" layoutX="252.0" layoutY="175.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="175.0">
+         <image>
+            <Image url="@assets/images/order.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="1.0" layoutY="315.0" prefHeight="32.0" prefWidth="600.0" text="Welcome" textAlignment="CENTER" textFill="#0a39f7">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutY="345.0" prefHeight="17.0" prefWidth="600.0" text="Please select one of above main operations to proceed">
+         <font>
+            <Font name="Ubuntu" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="9.0" layoutY="10.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/images/logout.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgPayment" fitHeight="100.0" fitWidth="100.0" layoutX="427.0" layoutY="200.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="180.0">
+         <image>
+            <Image url="@assets/images/money.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
